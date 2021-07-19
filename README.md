@@ -1,9 +1,9 @@
 This is a web application made with django
 
 ## How to use it :
- Install python
- locate the web app directory with cmd line
- enter the command : 
+ #Install python
+ #locate the web app directory with cmd line
+ #enter the command : 
  ```bash
  scripts/activate.bat
 ```
