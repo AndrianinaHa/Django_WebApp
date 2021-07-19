@@ -1,0 +1,73 @@
+{% load i18n %}
+
+    <nav class="pcoded-navbar">
+        <div class="navbar-wrapper">
+            <div class="navbar-brand header-logo">
+                <a target="_blank" href="#" class="b-brand">
+                    <div class="b-bg">
+                        <i class="feather icon-trending-up"></i>
+                    </div>
+                    <span class="b-title">{% trans 'Dashboard' %}</span>
+                </a>
+                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
+            </div>
+            <div class="navbar-content scroll-div">
+                <ul class="nav pcoded-inner-navbar">
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>{% trans 'Navigation' %}</label>
+                    </li>
+                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" 
+                        class="nav-item {% if 'index' in segment %} active {% endif %}">
+                        <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                            <span class="pcoded-mtext">Home</span></a>
+                    </li>
+
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>{% trans 'Manage' %}</label>
+                    </li>
+
+                    <li data-username="form elements advance componant validation masking wizard picker select"
+                        class="nav-item {% if 'List staff' in segment %} active {% endif %}">
+                        <a href="{% url 'liste' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">List staff</span></a>
+                    </li>
+                    {% if user.is_superuser %}
+                    <li data-username="Table bootstrap datatable footable"
+                        class="nav-item {% if 'Add staff' in segment %} active {% endif %}">
+                        <a href="{% url 'upload-employe' %}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user-plus"></i></span><span class="pcoded-mtext">Add staff</span></a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Options</label>
+                    </li>
+
+                    <li data-username="Page 2"
+                        class="nav-item {% if 'page-blank' in segment %} active {% endif %}">
+                        <a href="{% url 'todo:lists' %}" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Lists</span></a></li>
+
+                    <li data-username="Page 3"
+                        class="nav-item {% if 'page-blank' in segment %} active {% endif %}">
+                        <a href="{% url 'todo:mine' %}" class="nav-link"><span class="pcoded-micon"><i class="feather icon-slack"></i></span><span class="pcoded-mtext">My tasks</span></a></li>
+
+                    <li data-username="Page 4"
+                        class="nav-item {% if 'page-blank' in segment %} active {% endif %}">
+                        <a href="{% url 'todo:import_csv' %}" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sunset"></i></span><span class="pcoded-mtext">Import tasks</span></a></li>
+
+                    <li data-username="Authentication Sign up Sign in reset password Change password Personal information profile settings map form subscribe" class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="{% url 'register' %}" class="">Register</a></li>
+                        </ul>
+                    </li>
+
+                    <li data-username="Disabled Menu" class="nav-item">
+                        <a href="{% url 'logout' %}" class="nav-link">
+                            <span class="pcoded-micon">
+                                <i class="feather icon-power"></i>
+                            </span>
+                            <span class="pcoded-mtext">{% trans 'Logout' %} - [ {{ request.user.username }} ]</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>

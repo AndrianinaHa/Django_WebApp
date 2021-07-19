@@ -1,0 +1,44 @@
+{% extends "layouts/base.html" %}
+{% block title %} Liste Personnel {% endblock %}
+
+
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+    <style>
+        table {
+  border-collapse: collapse;
+}
+td {
+  padding: 0px 5px;
+  width:200px;
+}
+    </style>
+{% endblock stylesheets %}
+
+
+{% block content %}
+{% for employe in shelf %}
+    <div class="card justify-content-center" style="padding:0;">
+        <table class="table-hover w-100">
+            <center>
+                <tr>
+                    <td><img class="" style="height:100px;width:100px;border-radius:30px 30px;" src="{{ employe.image.url }}"></td>
+                    <td><span class="pcoded-micon"><i class="feather icon-user"></i></span> {{ employe.nom }} {{ employe.prenom }}</td>
+                    <td><span class="pcoded-micon"><i class="feather icon-phone"></i></span> {{ employe.contact }}</td>
+                    <td><span class="pcoded-micon"><i class="feather icon-command"></i></span> {{ employe.fonction }}</td>
+                    {% if user.is_superuser %}
+                    <td><span class="pcoded-micon"><i class="feather icon-calendar"></i></span> {{ employe.dateN }}</td>
+                    <td><span class="pcoded-micon"><i class="feather icon-package"></i></span> {{ employe.adresse }}</td>
+                    <td><a href="update/{{employe.id}}" class="btn btn-outline-warning w-75" id = '{{employe.id}}'>Edit</a><a href="delete/{{employe.id}}" class="btn btn-outline-danger w-75" id = '{{employe.id}}'>Delete</a></td>
+                    {% endif %}
+                </tr>
+            </center>
+        </table>
+    </div>
+{% endfor %}
+
+{% endblock %}
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
+

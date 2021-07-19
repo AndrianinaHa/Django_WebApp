@@ -1,0 +1,36 @@
+{% extends "layouts/base.html" %}
+{% block title %} Add a new employe {% endblock %}
+
+{% block stylesheets %}
+<style>
+    body {
+    background: #b1f6cb;
+    font-family: 'Open Sans',sans-serif;
+}
+</style>
+{% endblock stylesheets %}
+
+
+{% block content %}
+<div class="container" style="min-width: 100%; border-radius:10px 10px 10px 10px;">
+    <center>
+        <h4 class="display-4" style="color:grey; padding:10px;">Register a new employe</h4>
+
+        <div class="card-body px-lg-5 pt-0">
+            <form style="color: #757575;" method = 'POST' enctype="multipart/form-data">
+                {% csrf_token %}
+                <table class = 'w-70 table'>
+            {% for field in upload_forms %}
+                    <tr>
+                        <th>{{field.label}}</th>
+                        <td>{{ field }}</td>
+                    </tr>
+            {% endfor %}
+                </table>
+                <button type="submit" class="btn btn-outline-dark">Save</button>
+            </form>
+        </div>
+    </center>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% endblock %}

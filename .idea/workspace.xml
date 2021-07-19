@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa20d079-fb55-4979-9035-6e2d9618fc39" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kt1PbY1da03ycxMmQFRlZZK63H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/i18n_app/templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yanke\lastproject4\i18n_app\templates" />
+      <recent name="C:\Users\yanke\lastproject4\i18n_app" />
+      <recent name="C:\Users\yanke\lastproject4\Lib\site-packages\todo\templates" />
+      <recent name="C:\Users\yanke\lastproject4\core\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yanke\lastproject4\core\static" />
+      <recent name="C:\Users\yanke\lastproject4\core\static\assets" />
+      <recent name="C:\Users\yanke\lastproject4\core\static\assets\js" />
+      <recent name="C:\Users\yanke\lastproject4\core\static\assets\fonts" />
+      <recent name="C:\Users\yanke\lastproject4\core\static\assets\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa20d079-fb55-4979-9035-6e2d9618fc39" name="Default Changelist" comment="" />
+      <created>1606505050364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606505050364</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="309" y="62" key="#Inspections" timestamp="1606660533832">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="309" y="62" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1606660533832" />
+    <state x="137" y="39" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607193789563">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="39" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1607193789563" />
+    <state x="439" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607335419814">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="439" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1607335419814" />
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1606844980836">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606844980836" />
+  </component>
+</project>
