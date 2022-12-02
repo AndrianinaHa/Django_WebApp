@@ -7,7 +7,11 @@ This is a web application made with django
  ```bash
  scripts/activate.bat
 ```
- type
+ type to install the requirements
+  ```bash
+ pip install -r requirements.txt
+ ```
+ then run it
  ```bash
  python manage.py runserver
  ```
